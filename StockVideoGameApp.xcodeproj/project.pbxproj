@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAD099652AAA96980005659F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD099632AAA96980005659F /* RegisterViewController.swift */; };
+		AAD099662AAA96980005659F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD099642AAA96980005659F /* RegisterViewController.xib */; };
+		AAD099692AAA96B20005659F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD099672AAA96B20005659F /* ListViewController.swift */; };
+		AAD0996A2AAA96B20005659F /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD099682AAA96B20005659F /* ListViewController.xib */; };
+		AAD0996D2AAA96DA0005659F /* ListCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0996B2AAA96DA0005659F /* ListCellTableViewCell.swift */; };
+		AAD0996E2AAA96DA0005659F /* ListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD0996C2AAA96DA0005659F /* ListCellTableViewCell.xib */; };
 		AAD7D8402AAA79B300902DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7D83F2AAA79B300902DE5 /* AppDelegate.swift */; };
 		AAD7D8422AAA79B300902DE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7D8412AAA79B300902DE5 /* SceneDelegate.swift */; };
 		AAD7D8442AAA79B300902DE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7D8432AAA79B300902DE5 /* ViewController.swift */; };
 		AAD7D8472AAA79B300902DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD7D8452AAA79B300902DE5 /* Main.storyboard */; };
 		AAD7D8492AAA79B500902DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD7D8482AAA79B500902DE5 /* Assets.xcassets */; };
 		AAD7D84C2AAA79B500902DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD7D84A2AAA79B500902DE5 /* LaunchScreen.storyboard */; };
+		AAED05F82AAABC64000B71EB /* ExtensionsRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAED05F72AAABC64000B71EB /* ExtensionsRegister.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AAD099632AAA96980005659F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AAD099642AAA96980005659F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		AAD099672AAA96B20005659F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		AAD099682AAA96B20005659F /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		AAD0996B2AAA96DA0005659F /* ListCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellTableViewCell.swift; sourceTree = "<group>"; };
+		AAD0996C2AAA96DA0005659F /* ListCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCellTableViewCell.xib; sourceTree = "<group>"; };
 		AAD7D83C2AAA79B300902DE5 /* StockVideoGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockVideoGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD7D83F2AAA79B300902DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD7D8412AAA79B300902DE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +37,7 @@
 		AAD7D8482AAA79B500902DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD7D84B2AAA79B500902DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD7D84D2AAA79B500902DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAED05F72AAABC64000B71EB /* ExtensionsRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsRegister.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +51,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAD0995D2AAA95C80005659F /* Views  */ = {
+			isa = PBXGroup;
+			children = (
+				AAD099612AAA963C0005659F /* ListView */,
+				AAD0995F2AAA96140005659F /* RegisterView */,
+			);
+			path = "Views ";
+			sourceTree = "<group>";
+		};
+		AAD0995E2AAA95EF0005659F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AAD099622AAA967A0005659F /* ListCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AAD0995F2AAA96140005659F /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				AAD099632AAA96980005659F /* RegisterViewController.swift */,
+				AAED05F72AAABC64000B71EB /* ExtensionsRegister.swift */,
+				AAD099642AAA96980005659F /* RegisterViewController.xib */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		AAD099612AAA963C0005659F /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				AAD099672AAA96B20005659F /* ListViewController.swift */,
+				AAD099682AAA96B20005659F /* ListViewController.xib */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		AAD099622AAA967A0005659F /* ListCells */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0996B2AAA96DA0005659F /* ListCellTableViewCell.swift */,
+				AAD0996C2AAA96DA0005659F /* ListCellTableViewCell.xib */,
+			);
+			path = ListCells;
+			sourceTree = "<group>";
+		};
 		AAD7D8332AAA79B300902DE5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +115,8 @@
 		AAD7D83E2AAA79B300902DE5 /* StockVideoGameApp */ = {
 			isa = PBXGroup;
 			children = (
+				AAD0995E2AAA95EF0005659F /* Cells */,
+				AAD0995D2AAA95C80005659F /* Views  */,
 				AAD7D83F2AAA79B300902DE5 /* AppDelegate.swift */,
 				AAD7D8412AAA79B300902DE5 /* SceneDelegate.swift */,
 				AAD7D8432AAA79B300902DE5 /* ViewController.swift */,
@@ -127,7 +188,10 @@
 			files = (
 				AAD7D84C2AAA79B500902DE5 /* LaunchScreen.storyboard in Resources */,
 				AAD7D8492AAA79B500902DE5 /* Assets.xcassets in Resources */,
+				AAD0996A2AAA96B20005659F /* ListViewController.xib in Resources */,
 				AAD7D8472AAA79B300902DE5 /* Main.storyboard in Resources */,
+				AAD099662AAA96980005659F /* RegisterViewController.xib in Resources */,
+				AAD0996E2AAA96DA0005659F /* ListCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD7D8442AAA79B300902DE5 /* ViewController.swift in Sources */,
+				AAD0996D2AAA96DA0005659F /* ListCellTableViewCell.swift in Sources */,
+				AAED05F82AAABC64000B71EB /* ExtensionsRegister.swift in Sources */,
 				AAD7D8402AAA79B300902DE5 /* AppDelegate.swift in Sources */,
 				AAD7D8422AAA79B300902DE5 /* SceneDelegate.swift in Sources */,
+				AAD099692AAA96B20005659F /* ListViewController.swift in Sources */,
+				AAD099652AAA96980005659F /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +362,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,9 +370,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.StockVideoGameApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +393,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,9 +401,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MA.StockVideoGameApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
