@@ -7,11 +7,18 @@ extension RegisterViewController: UIPickerViewDelegate & UIPickerViewDataSource 
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return arrayConsolas.count
+        if pickerView.tag == 12 {
+            return arrayConsolas.count
+        }else{
+            return arrayStatus.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return arrayConsolas[row]
+        if pickerView.tag == 12 {
+            return arrayConsolas[row]
+        }else{
+            return arrayStatus[row]
+        }
     }
-    
 }

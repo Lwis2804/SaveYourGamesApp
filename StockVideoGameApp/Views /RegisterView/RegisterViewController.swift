@@ -17,7 +17,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var chosePlataform: UIPickerView!{
         didSet{self.chosePlataform.layer.cornerRadius = 10}
     }
-    @IBOutlet weak var addStatustxt: UITextField!
+    @IBOutlet weak var lblStatusGame: UILabel!
+    @IBOutlet weak var choseStatus: UIPickerView!
     @IBOutlet weak var backgroundImage: UIView!{
         didSet{self.backgroundImage.layer.cornerRadius = 10}
     }
@@ -33,18 +34,25 @@ class RegisterViewController: UIViewController {
     
     var arrayConsolas : [String] = ["Play Station","Play Station 2","Play Station 3","Play Station 4", "Play Station 5", "PSP", "NES", "Game Boy", "Game Boy", "Super Nintendo", "Nintendo 64", "Game Boy Color", "GameCube", "Game Boy Advance", " Nintendo DS", "Wii", "Nintendo 3DS", " Wii U", "Nintendo Switch", "Nintendo Switch Lite", "Nintendo Switch OLED", "Xbox", "Xbox 360", "Xbox360 S", "Xbox360 E", "Xbox One", "Xbox Series X", "Xbox Series S"]
     
+    var arrayStatus : [String] = ["Jugando", "Por Jugar", "Terminado", "Para Vender", "Vendido",]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpPicker()
-
+        setUpConsolasPicker()
+        setUpStatusPicker()
     }
-    
-
-    
-    func setUpPicker() {
+        
+    func setUpConsolasPicker() {
         self.chosePlataform.dataSource = self
         self.chosePlataform.delegate = self
+        self.chosePlataform.tag = 12
+    }
+    
+    func setUpStatusPicker() {
+        self.choseStatus.dataSource = self
+        self.choseStatus.delegate = self
+        self.choseStatus.tag = 34
     }
 
     
