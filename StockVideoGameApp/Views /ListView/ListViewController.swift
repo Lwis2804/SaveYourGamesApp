@@ -13,11 +13,13 @@ class ListViewController: UIViewController {
     @IBOutlet weak var tableList: UITableView!
     
     
-    var recibeDatos : String?
+    var videoGameName : String?
+    var videoGameConsol : String?
+    var videoGameStatus : String? 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.titleList.text = recibeDatos
+        
         setUpTableGameList()
     }
 

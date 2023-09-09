@@ -93,8 +93,8 @@
 		AAD099612AAA963C0005659F /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				AAD099672AAA96B20005659F /* ListViewController.swift */,
 				AAD099682AAA96B20005659F /* ListViewController.xib */,
+				AAD099672AAA96B20005659F /* ListViewController.swift */,
 				AA40FE202AABD1C80072A511 /* ExtensionTableList.swift */,
 			);
 			path = ListView;

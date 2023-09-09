@@ -36,6 +36,9 @@ class RegisterViewController: UIViewController {
     
     var arrayStatus : [String] = ["Jugando", "Por Jugar", "Terminado", "Para Vender", "Vendido",]
     
+    var choseConsol : String?
+    var pickStatus : String?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,14 +58,18 @@ class RegisterViewController: UIViewController {
         self.choseStatus.tag = 34
     }
 
+  
+    
+    
     
     
     @IBAction func btnAddVideoGame(_ sender: Any) {
-       
         let pushView = ListViewController()
-        pushView.recibeDatos = addVGTitletxt.text ?? ""
-        navigationController?.pushViewController(pushView, animated: true)
         
+        pushView.videoGameName = addVGTitletxt.text ?? ""
+        pushView.videoGameConsol = choseConsol
+        pushView.videoGameStatus = pickStatus
+        navigationController?.pushViewController(pushView, animated: true)
     }
     
   
