@@ -11,33 +11,30 @@ class ListCellTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var backgorundImage: UIView!{
-        didSet{self.backgorundImage.layer.cornerRadius = 5
+        didSet{self.backgorundImage.layer.cornerRadius = 10
         }
     }
     @IBOutlet weak var cellImage: UIImageView!{
-        didSet{self.cellImage.layer.cornerRadius = 5
+        didSet{self.cellImage.layer.cornerRadius = 10
         }
     }
     @IBOutlet weak var lblTitleGame: UILabel!{
-        didSet{self.lblTitleGame.layer.cornerRadius = 5
+        didSet{self.lblTitleGame.layer.cornerRadius = 10
         }
     }
     @IBOutlet weak var lblConsola: UILabel!{
-        didSet{self.lblConsola.layer.cornerRadius = 5
+        didSet{self.lblConsola.layer.cornerRadius = 10
         }
     }
     @IBOutlet weak var lblEstatus: UILabel!{
-        didSet{self.lblEstatus.layer.cornerRadius = 5
+        didSet{self.lblEstatus.layer.cornerRadius = 10
         }
     }
     @IBOutlet weak var numberStarsImage: UIImageView!{
-        didSet{self.backgorundImage.layer.cornerRadius = 5
+        didSet{self.backgorundImage.layer.cornerRadius = 10
         }
     }
-    @IBOutlet weak var btnGo: UIButton!{
-        didSet{self.btnGo.layer.cornerRadius = 5
-        }
-    }
+    
     
     
     

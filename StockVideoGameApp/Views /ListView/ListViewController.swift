@@ -18,10 +18,15 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.titleList.text = recibeDatos
-    
-
+        setUpTableGameList()
     }
 
+    
+    func setUpTableGameList() {
+        self.tableList.delegate = self
+        self.tableList.dataSource = self
+        tableList.register(ListCellTableViewCell.nib, forCellReuseIdentifier: ListCellTableViewCell.identifier)
+    }
 
     
 

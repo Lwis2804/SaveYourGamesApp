@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA40FE212AABD1C80072A511 /* ExtensionTableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA40FE202AABD1C80072A511 /* ExtensionTableList.swift */; };
+		AA40FE242AABD2A50072A511 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA40FE232AABD2A50072A511 /* Commons.swift */; };
 		AAD099652AAA96980005659F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD099632AAA96980005659F /* RegisterViewController.swift */; };
 		AAD099662AAA96980005659F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD099642AAA96980005659F /* RegisterViewController.xib */; };
 		AAD099692AAA96B20005659F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD099672AAA96B20005659F /* ListViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA40FE202AABD1C80072A511 /* ExtensionTableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTableList.swift; sourceTree = "<group>"; };
+		AA40FE232AABD2A50072A511 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		AAD099632AAA96980005659F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AAD099642AAA96980005659F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		AAD099672AAA96B20005659F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA40FE222AABD25A0072A511 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				AA40FE232AABD2A50072A511 /* Commons.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
 		AAD0995D2AAA95C80005659F /* Views  */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 			children = (
 				AAD099672AAA96B20005659F /* ListViewController.swift */,
 				AAD099682AAA96B20005659F /* ListViewController.xib */,
+				AA40FE202AABD1C80072A511 /* ExtensionTableList.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -115,6 +128,7 @@
 		AAD7D83E2AAA79B300902DE5 /* StockVideoGameApp */ = {
 			isa = PBXGroup;
 			children = (
+				AA40FE222AABD25A0072A511 /* Commons */,
 				AAD0995E2AAA95EF0005659F /* Cells */,
 				AAD0995D2AAA95C80005659F /* Views  */,
 				AAD7D83F2AAA79B300902DE5 /* AppDelegate.swift */,
@@ -206,6 +220,8 @@
 				AAD0996D2AAA96DA0005659F /* ListCellTableViewCell.swift in Sources */,
 				AAED05F82AAABC64000B71EB /* ExtensionsRegister.swift in Sources */,
 				AAD7D8402AAA79B300902DE5 /* AppDelegate.swift in Sources */,
+				AA40FE242AABD2A50072A511 /* Commons.swift in Sources */,
+				AA40FE212AABD1C80072A511 /* ExtensionTableList.swift in Sources */,
 				AAD7D8422AAA79B300902DE5 /* SceneDelegate.swift in Sources */,
 				AAD099692AAA96B20005659F /* ListViewController.swift in Sources */,
 				AAD099652AAA96980005659F /* RegisterViewController.swift in Sources */,
