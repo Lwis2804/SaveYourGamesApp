@@ -5,12 +5,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController" customModule="StockVideoGameApp" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="oRZ-80-lF3" id="GXI-N9-tgG"/>
+                <outlet property="btnBtnAgregarNVG" destination="7cT-0s-V7T" id="uik-b9-6Yt"/>
                 <outlet property="tableList" destination="JHC-rd-8f6" id="rmW-9R-ZKr"/>
                 <outlet property="titleList" destination="jD5-pr-yqp" id="oMr-oU-l9S"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -38,32 +39,57 @@
                         <constraint firstAttribute="width" constant="42" id="QCf-dj-gCy"/>
                     </constraints>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JHC-rd-8f6">
-                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JHC-rd-8f6">
+                    <rect key="frame" x="6" y="66" width="308" height="414"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="414" id="oG0-M9-yQZ"/>
+                    </constraints>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRZ-80-lF3">
+                    <rect key="frame" x="90" y="488" width="140" height="60"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cT-0s-V7T">
+                            <rect key="frame" x="6" y="6" width="128" height="48"/>
+                            <color key="backgroundColor" red="0.1639980674" green="0.24897590280000001" blue="0.47739332909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.64363622669999998" green="0.86618280410000004" blue="0.93381410840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="plus.rectangle.on.folder" catalog="system" title="   Agregar " titleAlignment="automatic"/>
+                            <connections>
+                                <action selector="btnGoToRegisterVideoGame:" destination="-1" eventType="touchUpInside" id="SPE-OG-Kde"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.64363622669999998" green="0.86618280410000004" blue="0.93381410840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7cT-0s-V7T" secondAttribute="trailing" constant="6" id="1N0-SO-I1D"/>
+                        <constraint firstItem="7cT-0s-V7T" firstAttribute="leading" secondItem="oRZ-80-lF3" secondAttribute="leading" constant="6" id="IWx-6P-miO"/>
+                        <constraint firstItem="7cT-0s-V7T" firstAttribute="top" secondItem="oRZ-80-lF3" secondAttribute="top" constant="6" id="jmL-GE-f4u"/>
+                        <constraint firstAttribute="bottom" secondItem="7cT-0s-V7T" secondAttribute="bottom" constant="6" id="keB-xf-JRG"/>
+                        <constraint firstAttribute="height" constant="60" id="kll-OD-Qng"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.1639980674" green="0.24897590280000001" blue="0.47739332909999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="jD5-pr-yqp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2Yl-7m-G4k"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jD5-pr-yqp" secondAttribute="trailing" id="5lX-MV-VOq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JHC-rd-8f6" secondAttribute="trailing" id="9K4-h3-GAv"/>
+                <constraint firstItem="JHC-rd-8f6" firstAttribute="top" secondItem="jD5-pr-yqp" secondAttribute="bottom" constant="6" id="CSs-Xg-8do"/>
                 <constraint firstItem="hdu-g6-e0f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="9" id="NVI-Xn-EMs"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JHC-rd-8f6" secondAttribute="bottom" id="VlT-QR-At6"/>
-                <constraint firstItem="JHC-rd-8f6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hze-Dc-aHk"/>
+                <constraint firstItem="JHC-rd-8f6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="6" id="QRK-SM-TYz"/>
+                <constraint firstItem="oRZ-80-lF3" firstAttribute="top" secondItem="JHC-rd-8f6" secondAttribute="bottom" constant="8" symbolic="YES" id="Ws6-Qc-PX8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oRZ-80-lF3" secondAttribute="trailing" constant="90" id="a7H-Lh-wu2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oRZ-80-lF3" secondAttribute="bottom" constant="20" id="an8-Ab-Oph"/>
+                <constraint firstItem="oRZ-80-lF3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="90" id="l2b-xt-dQR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hdu-g6-e0f" secondAttribute="trailing" constant="16" id="lvC-9h-9LT"/>
-                <constraint firstItem="JHC-rd-8f6" firstAttribute="top" secondItem="jD5-pr-yqp" secondAttribute="bottom" id="uzT-db-5EK"/>
-                <constraint firstItem="JHC-rd-8f6" firstAttribute="top" secondItem="hdu-g6-e0f" secondAttribute="bottom" constant="9" id="xYl-QM-Dmu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JHC-rd-8f6" secondAttribute="trailing" constant="6" id="tB3-yo-oCv"/>
                 <constraint firstItem="jD5-pr-yqp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zeZ-Jr-5fk"/>
             </constraints>
-            <point key="canvasLocation" x="131" y="-11"/>
+            <point key="canvasLocation" x="129.375" y="-11.619718309859156"/>
         </view>
     </objects>
     <resources>
+        <image name="plus.rectangle.on.folder" catalog="system" width="128" height="95"/>
         <image name="titleImage" width="537" height="529"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

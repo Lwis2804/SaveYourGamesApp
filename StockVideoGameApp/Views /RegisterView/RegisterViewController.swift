@@ -12,20 +12,28 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var lblTitleMyVG: UILabel!{
         didSet{self.lblTitleMyVG.layer.cornerRadius = 10}
     }
-    @IBOutlet weak var imageMyVG: UIImageView!
+    @IBOutlet weak var imageMyVG: UIImageView!{
+        didSet{self.imageMyVG.layer.cornerRadius = 10 }
+    }
+    
     @IBOutlet weak var addVGTitletxt: UITextField!
     @IBOutlet weak var chosePlataform: UIPickerView!{
         didSet{self.chosePlataform.layer.cornerRadius = 10}
     }
     @IBOutlet weak var lblStatusGame: UILabel!
-    @IBOutlet weak var choseStatus: UIPickerView!
+    @IBOutlet weak var choseStatus: UIPickerView!{
+        didSet{self.choseStatus.layer.cornerRadius = 10
+        }
+    }
     @IBOutlet weak var backgroundImage: UIView!{
         didSet{self.backgroundImage.layer.cornerRadius = 10}
     }
     @IBOutlet weak var lblClificaJuego: UILabel!{
         didSet{self.lblClificaJuego.layer.cornerRadius = 10}
     }
-    @IBOutlet weak var starImage: UIImageView!
+    @IBOutlet weak var starImage: UIImageView!{
+        didSet{self.starImage.layer.cornerRadius = 10 }
+    }
     @IBOutlet weak var btnAddVideoGame: UIButton!{
         didSet{self.btnAddVideoGame.layer.cornerRadius = 10}
     }
@@ -58,16 +66,13 @@ class RegisterViewController: UIViewController {
         self.choseStatus.tag = 34
     }
 
-  
-    
-    
-    
     
     @IBAction func btnAddVideoGame(_ sender: Any) {
         let pushView = ListViewController()
         pushView.videoGameName = addVGTitletxt.text ?? ""
         pushView.videoGameConsol = choseConsol
         pushView.videoGameStatus = pickStatus
+        pushView.videoGameRate = starCalificationTxt.text
         navigationController?.pushViewController(pushView, animated: true)
     }
     
