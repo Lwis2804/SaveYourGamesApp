@@ -65,7 +65,6 @@ class RegisterViewController: UIViewController {
     
     @IBAction func btnAddVideoGame(_ sender: Any) {
         let pushView = ListViewController()
-        
         pushView.videoGameName = addVGTitletxt.text ?? ""
         pushView.videoGameConsol = choseConsol
         pushView.videoGameStatus = pickStatus

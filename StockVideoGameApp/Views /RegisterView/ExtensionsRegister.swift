@@ -27,9 +27,9 @@ extension RegisterViewController: UIPickerViewDelegate & UIPickerViewDataSource 
         if pickerView.tag == 12 {
     let seleccionConsola = arrayConsolas[row]
     choseConsol = seleccionConsola
-        }else if pickerView.tag == 34{
+        }else{
             let seleccionEstatus = arrayStatus[row]
-            choseConsol = seleccionEstatus
+            pickStatus = seleccionEstatus
         }
     }
 }
